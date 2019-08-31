@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二手房详情页</title>
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/ershuohome.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script type="text/javascript" src="./js/ershouhome.js"></script>
+</head>
+<body>
+
+	<div class="cebian">
+		<div class="zhangdang">
+			<i class="fa fa-align-justify" aria-hidden="true"></i>
+		</div>
+		<div class="guangzhu">
+			<i class="fa fa-heart-o" aria-hidden="true"></i>
+		</div>
+		<div class="bijiao">
+			<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+		</div>
+		<div class="maifang">
+			<i class="fa fa-university" aria-hidden="true"></i>
+		</div>
+		<div class="tool">
+			<i class="fa fa-cog" aria-hidden="true"></i>
+		</div>
+		<div class="chengnv">
+			<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		</div>
+		<div class="ma2">
+			<i class="fa fa-commenting" aria-hidden="true"></i>
+		</div>
+		<div class="kefu">
+			<i class="fa fa-comments" aria-hidden="true"></i>
+		</div>
+		<div class="fangkui">
+			<i class="fa fa-eyedropper" aria-hidden="true"></i>
+		</div>
+
+		<div class="top">
+			<a href="#top">
+				<i class="fa fa-sort-asc" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+
+
+	<div>
+		<div class="banner clearfix">
+			<ul >
+				<li><a href="./index.html">首页</a> </li>
+				<li><a href="./ershouhome.html">二手房</a> </li>
+				<li><a href="#">新房</a> </li>
+				<li><a href="#">租房</a> </li>
+				<li><a href="#">海外</a> </li>
+				<li><a href="#">商业办公</a> </li>
+				<li><a href="#">小区</a> </li>
+				<li><a href="#">经纪人</a> </li>
+				<li><a href="#">指南</a> </li>
+				<li><a href="#">房价</a> </li>
+				<li><a href="./sald-tools.html">工具</a> </li>
+				<li><a href="./sald-house.html">发布房源</a> </li>
+			</ul>
+			<div class="banner-right">
+				<div class="login">
+					登录/注册
+				</div>
+				<div class="phone">
+					热线电话 1010-9666
+				</div>
+			</div>
+		</div>
+
+		<div class="header">
+			<div class="menu celarfix">
+				<a class="logo" href="#"></a>
+				<ul>
+					<li><a href="#" style="margin-left: 30px;">在售</a></li>
+					<li><a href="#">成交</a></li>
+					<li><a href="#">小区</a></li>
+					<li><a href="#">房价</a></li>
+					<li><a href="#">地图找图</a></li>
+				</ul>
+			</div>
+			<div class="download">
+				<span style="line-height: 18px;font-size: 16px;">下载链家APP</span>
+			</div>
+			<div class="serch">
+				<input type="text" placeholder="请输入区域 板块或小区名开始找房">
+			</div>
+		</div>
+		
+		<!-- header底下部分 -->
+		<div class="m-filter">
+
+			<!-- 位置div -->
+			<div class="position">
+				<span>位置</span>
+				<!-- <div class="a" id="button21" onclick="button21click()">区域</div> -->
+				<a href="#" id="button21" onclick="button22click()">区域</a>
+				<ul class="quyu" id="div21" style="display: block">
+					<li>工业园区</li>
+					<li>吴中</li>
+					<li>姑苏</li>
+					<li>高新</li>
+					<li>相城</li>
+					<li>吴江</li>
+					<li>昆山</li>
+				</ul>
+				<!-- <div class="a" id="button22" onclick="button22click()">地铁</div> -->
+				<a href="#" id="button22" onclick="button21click()">地铁</a>
+				<ul class="ditei" id="div22" style="display: "block">
+					<li>1号线</li>
+					<li>2号线</li>
+					<li>3号线</li>
+					<li>4号线支线</li>
+				</ul>
+				<div class="pei">
+					
+				</div>
+			</div>
+
+			<!-- 价钱 面积等相关 -->
+			<div class="select">
+				<div class="value">
+					<span><b>售价</b></span>
+					
+					<div id="remember-password-container" style=" left: 55px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">100万以下 </label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 200px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">100万以下 </label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 345px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">100万以下 </label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 490px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">100万以下 </label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 635px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">100万以下 </label>
+			            </div>
+			        </div>
+
+			         <div id="remember-password-container" style=" left: 780px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">100万以下 </label>
+			            </div>
+		        	</div>	
+		        	<span class="more" style="float: right;">+&nbsp;展示更多</span>
+				</div>
+
+
+				<div class="area">
+					<span><b>面积</b></span>
+					<div id="remember-password-container" style=" left: 50px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">50平以下</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 194px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">50-70平</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 339px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">70-90平</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 487px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">90-110平</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 637px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox">110-130平</label>
+			            </div>
+			        </div>
+			        
+			         <div id="remember-password-container" style=" left: 781px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">130-150平</label>
+			            </div>
+			            
+		        	</div>	
+					<span class="more" style="float: right;">+&nbsp;展示更多</span>
+				</div>
+
+
+				<div class="fangxin">
+					<span><b>房型</b></span>
+					<div id="remember-password-container" style=" left: 37px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">一室</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 183px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">二室</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 328px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">三室</label>
+			            </div>
+			           
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 473px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">四室</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 618px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox">五室</label>
+			            </div>
+			        </div>
+			        
+			         <div id="remember-password-container" style=" left: 775px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">五室以上</label>
+			            </div>
+		        	</div>	
+		        	 <span class="more" style="float: right;">+&nbsp;展示更多</span>
+				</div>
+
+				<div class="targat">
+					<span><b>标签</b></span>
+					<div id="remember-password-container" style=" left: 42px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">满二年</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 189px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">满五年</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 340px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">必看好房</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 473px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">新上</label>
+			            </div>
+		        	</div>	
+
+		        	<div id="remember-password-container" style=" left: 630px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox">随时看房</label>
+			            </div>
+			        </div>
+			        
+			         <div id="remember-password-container" style=" left: 772px;">
+			            <div class="remember-password-content">
+			                <input type="checkbox" id="remember-me-checkbox">
+			                <span></span>
+			                <label class="remember-me-label" for="remember-me-checkbox" style="width: 40px;">VR房源</label>
+			            </div>
+		        	</div>	
+		        	<span class="more" style="float: right;">+&nbsp;展示更多</span>
+				</div>
+
+				<div class="moreselect">
+					<span>更多选项</span>
+				</div>
+	
+			</div>
+		</div>
+		
+
+
+		<div class="content">
+			<div class="map">
+				<i class="fa fa-map-marker fa-8x" aria-hidden="true"></i>
+				<button>
+					试试地图找房
+				</button>
+			</div>
+			<div class="question">
+				<div class="title">
+					热门问答
+				</div>
+				<ul>
+					<li>可以个人发布买房吗？ 4个回答 / 2018-04-27</li>
+					<li>购房所需材料有哪些？ 4个回答 / 2018-04-26</li>
+					<li>二手房签约时，定金和订金有什么区别？ 4个回答 / 2018-04-26</li>
+					<li>如何判断房屋是否满两年？ 3个回答 / 2018-04-27</li>
+					<li>满五年的认定是以到网签时间还是交税时间？ 3个回答 / 2018-04-26</li>
+				</ul>
+			</div>
+
+			<div class="baike">
+				<div class="title">
+					热门百科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多
+
+				</div>
+				<ul>
+					<li>可以个人发布买房吗？ 4个回答 / 2018-04-27</li>
+					<li>购房所需材料有哪些？ 4个回答 / 2018-04-26</li>
+					<li>二手房签约时，定金和订金有什么区别？ 4个回答 / 2018-04-26</li>
+					<li>如何判断房屋是否满两年？ 3个回答 / 2018-04-27</li>
+					<li>满五年的认定是以到网签时间还是交税时间？ 3个回答 / 2018-04-26</li>
+				</ul>
+			</div>
+			<div class="download">
+				<div class="title">
+					下载链接APP
+				</div>
+				<img src="./images/ma.png" alt="">
+				<p>扫描上方二维码</p>
+				<p>随时查看新房源</p>
+				<a href="#">了解更多</a>
+			</div>
+
+			<div class="menu2">
+				<ul>
+					<li>默认排序</li>
+					<li>最新</li>
+					<li>总价</li>
+					<li>房屋单价</li>
+					<li>面积</li>
+					<li>带看较多</li>
+				</ul>
+				<div class="biaoqian">
+					<i class="fa fa-align-justify" aria-hidden="true" style="opacity: 1;"></i>
+					<i class="fa fa-cog" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="clear">
+				<span>共找到<b>2048</b>套苏州二手房</span>
+				<div class="clear-tiaojian">
+					清除条件
+				</div>
+			</div>
+			<div class="content-1">
+				<div class="left">
+					<img src="images/210.jpg" alt="">
+				</div>
+
+				<div class="center">
+					<div class="title">
+						地铁无缝对接 精装三房 房东诚意出售 有钥匙 视野佳
+					</div>
+					<div class="houseinfo">
+						招商依云华苑 | 3室2厅 | 89平米 | 南 | 精装 | 有电梯
+					</div>
+					<div class="positon">
+						高楼层(共27层)2016年建板楼 - 活力岛
+					</div>
+					<div class="followinfo">
+						29人关注 / 共14次带看 / 12天以前发布
+					</div>
+				
+					<span>近地铁</span>
+					<img src="./images/goodhouse.png" alt="">
+					<span style="color: blue">VR房源</span>
+					<span style="color: green">随时看房</span>
+					
+					
+				</div>
+				
+			</div>
+
+			<div class="content-2">
+				<div class="left">
+					<img src="images/16.jpg" alt="">
+				</div>
+
+
+				<div class="center">
+					<div class="title">
+						正荣华府幸福城邦三居室带装修好房诚售
+					</div>
+					<div class="houseinfo">
+						正荣华府 | 3室2厅 | 114.59平米 | 南 | 精装 | 有电梯
+					</div>
+					<div class="positon">
+						高楼层(共33层)2017年建板楼 - 木渎
+					</div>
+					<div class="followinfo">
+						8人关注 / 共5次带看 / 1个月以前发布
+					</div>
+					<img src="./images/goodhouse.png" alt="">	
+				</div>
+
+
+			</div>
+			<div class="adv">
+				<i class="fa fa-times fa-2x" aria-hidden="true"></i>
+			</div>
+
+			<div class="content-3">
+				<div class="left">
+					<img src="images/216.jpg" alt="">
+				</div>
+				<div class="center">
+					<div class="title">
+						中交璟庭 三房二厅 通透户型 楼层很好
+					</div>
+					<div class="houseinfo">
+						中交璟庭 | 3室2厅 | 96.55平米 | 南 北 | 毛坯
+					</div>
+					<div class="positon">
+						高楼层(共27层)暂无数据 - 太湖新城（吴江）
+					</div>
+					<div class="followinfo">
+						15人关注 / 共32次带看 / 1个月以前发布
+					</div>
+				
+					<span>近地铁</span>
+					<span style="color: blue">房本满两年</span>
+					<span style="color: green">随时看房</span>
+					
+				</div>
+			</div>
+
+			<div class="content-4">
+				<div class="left">
+					<img src="images/232x174.jpg" alt="">
+				</div>
+				<div class="center">
+					<div class="title">
+						地铁无缝对接 精装三房 房东诚意出售 有钥匙 视野佳
+					</div>
+					<div class="houseinfo">
+						招商依云华苑 | 3室2厅 | 89平米 | 南 | 精装 | 有电梯
+					</div>
+					<div class="positon">
+						高楼层(共27层)2016年建板楼 - 活力岛
+					</div>
+					<div class="followinfo">
+						29人关注 / 共14次带看 / 12天以前发布
+					</div>
+				
+					<span>近地铁</span>
+					
+					<span style="color: blue">VR房源</span>
+					<span style="color: green">随时看房</span>
+					
+				</div>
+			</div>
+
+		<div class="letter">
+			<a href="#">苏州房产网</a>
+			 > 
+			 <a href="#">苏州二手房</a>
+			 <div class="next">
+			 	<span style="background-color: #000;">1</span>
+			 	<span>2</span>
+			 	<span>...</span>
+			 	<span>100</span>
+			 	<span>下一页</span>
+			 </div>
+		</div>
+		<!-- 推荐楼房 -->
+		<div class="tuijian">
+			<h3>推荐楼盘</h3>
+			<div class="div1">
+				<img src="./images/16.jpg" alt="">
+				40000元/平
+			</div>
+			<div class="div2">
+				<img src="images/210.jpg" alt="">
+				28000元/平
+			</div>
+			<div class="div3">
+				<img src="./images/216.jpg" alt="">
+				54343元/平
+			</div>
+			<div class="div4">
+				<img src="./images/232x174.jpg" alt="">
+				24532元/平
+			</div>
+			<div class="div5">
+				<img src="./images/280x210.jpg" alt="">
+				86543元/平
+			</div>
+
+		</div>
+		
+
+
+		<div class="last">
+		<div class="f-title clearfix">
+			<div class="zuo">
+				<ul class="menu1" style="color: white">
+					<li><a href="#">关于链家</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">加入我们</a></li>
+					<li><a href="#">隐私声明</a></li>
+					<li><a href="#">网站地图</a></li>
+					<li><a href="#">友情链接</a></li>
+					
+				</ul>
+			</div>
+			<div class="you">
+				官方客服 1010 9666
+			</div>
+		</div>
+		<div class="lianjia-link-box">
+			<div class="menu3">
+				<span class="span1" style="padding-left: 0px;" id="button1" onclick="button1click()">二手房</span>
+				<div class="spans1" id="div1" style="display: block">
+					<pre>
+合肥二手房 三亚二手房 济南二手房 凉山二手房 重庆二手房 开封二手房 常州二手房 大连二手房 廊坊二手房 
+北海二手房 淮安二手房 南昌二手房 吉林二手房 威海二手房 长沙二手房 泉州二手房 湖州二手房 宜昌二手房 
+石家庄二手房
+
+					</pre>
+				</div>
+				<span class="span2" id="button2" onclick="button2click()">热门小区</span>
+				<div class="spans2" id="div2">
+					<pre>
+锦荷苑 相门后庄80号 彩虹一村 锦江家园 虎阜花园西区 南环汇邻广场 绿地中央广场 四期夏莲花园 华敏世家花园
+招商公园1872 皓康小时代（新时代花园） 红鼎湾花园  新元新村 光华糖果公元 玖园中锐琅 石名筑半月 湾荷韵新村南区 
+海上印象淀辉锦园中泰大厦（昆山） 吴越尚院得易家龙湖狮山天街生活广场 一期荣华花苑 鑫鑫国际 阳光水世界五期
+君悦花园莲花新村七区绿地中央广场三期越溪庭院水岸清华保利雅苑葑谊新村舜江浅水湾道前街地方弄散盘淞泽家园（二区）
+葑门路散盘湖畔雅居希悦庭公馆
+
+					</pre>
+				</div>
+				<span class="span3" id="button3" onclick="button3click()">二手房</span>
+				<div class="spans1" id="div3">
+					<pre>
+济南二手房 凉山二手房 重庆二手房 开封二手房 常州二手房 大连二手房 廊坊二手房 
+北海二手房 淮安二手房 南昌二手房 吉林二手房 威海二手房 长沙二手房 泉州二手房 
+石家庄二手房
+
+					</pre>
+				</div>
+				<span class="span4" id="button4" onclick="button4click()">新房</span>
+				<div class="spans4" id="div4">
+					<pre>
+北京新房 长春新房 成都新房 重庆新房 长沙新房 大连新房 佛山新房 广州新房 合肥新房
+杭州新房 济南新房 昆明新房 南京新房 青岛新房 上海新房 石家庄新房 苏州新房 沈阳新房
+烟台新房 郑州新房
+
+					</pre>
+				</div>
+				<span class="span5" id="button5" onclick="button5click()">合作与友情链接</span>
+				<div class="spans5" id="div5">
+					<pre>
+杭州租房网  个人房源网  上海二手房
+
+
+					</pre>
+				</div>
+			</div>
+			
+			
+
+		</div>
+
+		<div class="bottom">
+			<div class="copyright">链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2019 链家网Lianjia.com版权所有 | <a target="_blank" href="#" style="text-decoration:none;color: #9E8888;">营业执照</a><br>违法和不良信息举报电话：010-86440676 违法和不良信息举报邮箱：jubaoyouxiang@lianjia.com
+			</div>
+			<div style="width:300px;color: #888c8e;font-size: 12px;line-height: 20px;float: left;">
+				<a target="_blank" href="#" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+					<img src="https://s1.ljcdn.com/feroot/pc/asset/img/home/beian.png?_v=20190618155701" "="" style="float:left;">
+					<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;color: #888c8e;">京公网安备 11010802024019号</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	</div>
+</body>
+</html>

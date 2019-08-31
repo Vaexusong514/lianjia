@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+
+	<script type="text/javascript" src="./js/index.js"></script>
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/animate.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="body">
+		<div id="adv" class="adv">
+			<img class="img1" src="./images/iphone.png" alt="">
+			<div>
+				<span class="span1">扫描下载链家APP</span>
+				<span>随时随地查看新上房源</span>
+			</div>
+			<img style="width: 80px;height: 80px;margin-right: 300px;" src="./images/ma.png" alt="">
+			<i id="close" onclick="closeadv()" class="fa fa-times" aria-hidden="true"></i>
+			
+
+		</div>
+		<div class="cebian">
+			<div class="zhangdang">
+				<i class="fa fa-align-justify" aria-hidden="true"></i>
+			</div>
+			<div class="guangzhu">
+				<i class="fa fa-heart-o" aria-hidden="true"></i>
+			</div>
+			<div class="bijiao">
+				<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+			</div>
+			<div class="maifang">
+				<i class="fa fa-university" aria-hidden="true"></i>
+			</div>
+			<div class="tool">
+				<i class="fa fa-cog" aria-hidden="true"></i>
+			</div>
+			<div class="chengnv">
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+			</div>
+			<div class="ma2">
+				<i class="fa fa-commenting" aria-hidden="true"></i>
+			</div>
+			<div class="kefu">
+				<i class="fa fa-comments" aria-hidden="true"></i>
+			</div>
+			<div class="fangkui">
+				<i class="fa fa-eyedropper" aria-hidden="true"></i>
+			</div>
+
+			<div class="top">
+				<a href="#top">
+					<i class="fa fa-sort-asc" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+
+
+		<div class="header" id="top">
+			<div class="wrapper">
+				<div class="fl">
+					<a href="#"class="logo" target="_self">
+						<!-- <h1 class="index_h1">链家网</h1> -->
+					</a>
+					<span class="exchange"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp; 苏州</span>
+				</div>
+
+				<div class="fr">
+				<span><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a class="login" href="#">登录</a>&nbsp;&nbsp;&nbsp;<a class="zhuce" href="#">立即注册</a></span>
+					<div style="position: relative;" >
+						<div id="zhinan" class="zhinan">
+							<i class="fa fa-caret-up fa-3x" aria-hidden="true"></i>
+							<div>
+								<span>问答</span>
+								<span>百科</span>
+							</div>
+							
+						</div>
+						<ul class="nav" >
+							<li><a href="./ershouhome.html">二手房</a></li>
+							<li>新房</li>
+							<li><a href="./ershouhome.html">租房</a></li>
+							<li>海外</li>
+							<li>商业办公</li>
+							<li>小区</li>
+							<li>经纪人</li>
+							<li id="zhi" onclick="clickzhi()" onmouseover="overzhi()" onmouseleave="leavezhi()">指南</li>
+							<li>房价</li>
+							<li><a href="./sald-tools.html">工具</a></li>
+							<li class="img"><a href="./sald-house.html">发布房源</a></li>
+						</ul>
+					</div>
+				</div>	
+
+				<div class="tubiao">
+					连接每个家的故事
+				</div>
+
+				<div class="house-num">
+					苏州链家真实在售二手房 27758 套
+				</div>
+
+				<ul class="menu">
+					<li id="onclick1" onclick="sharchtwohouse()">找二手房</li>
+					<li id="onclick2" onclick="sharchnewhouse()">找新房</li>
+					<li id="onclick3" onclick="sharchrenthouse()">找租房</li>
+					<li id="onclick4" onclick="sharchxaioqu()">找小区</li>
+					<li id="onclick5" onclick="sharchanswer()">搜问答</li>
+				</ul>
+
+				<div class="search">
+					<i id="triangle" class="fa fa-caret-up fa-2x" aria-hidden="true"></i>
+					<span>
+						<input id="input" class="input" type="text" placeholder="房产知识有疑问?来搜搜吧~">
+						<span class="baidu">开始找房</span>
+					</span>
+				</div>
+			</div>
+			
+			
+			
+
+			<div class="pen1">
+				<div class="pen"><a href="#">
+					<img src="https://image1.ljcdn.com/materials/list/2016-08-17/php3X11MP.png">关于仿冒我公司进行不正当竞争行为的郑重声明</a></div>
+				<div class="pen"><a href="#"><img src="https://image1.ljcdn.com/materials/list/2016-06-29/phpAPdvEm.png">房地产中介诚信服务承诺及保证书</a></div>
+			</div>
+		</div>
+		
+
+		<div class="home-nav">
+			<ul class="count-2 clearfix" >
+				<li class="hvr-bob1">
+					<a href="/ditu/">
+						<img  src="https://image1.ljcdn.com/materials/list/2016-07-21/php4TtmtO.png">
+						<b>地图找房</b>
+						<p>为您精准定位，位置周边配套设施一览无余
+						</p>
+					</a>
+				</li>
+					
+				<li class="hvr-bob2">
+					<a href="/zufang/">
+						<img  src="https://image1.ljcdn.com/materials/list/2016-11-23/phpxYKKUt.png">
+						<b>找出租房</b>
+						<p>海量出租房源，质优好房专业服务全新呈现</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="hand-lianjia">
+			<div class="fl">
+				<div class="titles"></div>
+				<p>集二手、新房、租房功能于一体，随时随地任性找房。IM匿名咨询让您放心，消息动态推送让您省心，服务承诺让您安心，数据百科锦囊让您感受贴心漫漫找房路，我们努力为您想更多。</p>
+				<div class="download">
+					<div class="hand-app">
+						<a href="#" class="ios" target="_blank"></a>
+						<a href="#" class="android"></a>
+					</div>
+					<img class="ma" src="./images/ma.png" alt="">
+					
+				</div>
+			
+			</div>
+		</div>
+
+
+
+		<div class="ershoufang" >
+		    <div class="wrapper">
+		        <div class="f1">
+		            <div class="name">
+		            	<b>二手好房</b>&nbsp;&nbsp;为你而选
+		            </div>
+		            <p>好房源那么多，我们为你精选，链家网会越来越懂你<a href="/ershoufang/">更多苏州二手房</a></p>
+		        </div>
+		        <ul class="h1">
+		        	<li>
+		        		<img src="images/fang.jpg" alt="">
+		        		<img class="p1" src="images/bianqian.png" alt="">
+		        		
+						<pre class="p2">
+		        			相城 活力岛
+		        			恒基水漾花城
+						</pre>
+		        		<pre class="p3">
+		        			3室二厅 85.55平米
+						</pre>
+						<pre class="p4">
+		        			205万
+						</pre>
+		        	</li>
+		        	<li>
+		        		<img src="images/216.jpg" alt="">
+		        		<img class="p1" src="images/bianqian.png" alt="">
+		        		<pre class="p2">
+		        			水月周庄别墅
+		        			带南花园
+						</pre>
+		        		<pre class="p3">
+		        			3室二厅 98.55平米
+						</pre>
+						<pre class="p4">
+		        			205万
+						</pre>
+		        	</li>
+		        	<li>
+		        		<img src="images/16.jpg" alt="">
+		        		<img class="p1" src="images/bianqian.png" alt="">
+		        		<pre class="p2">
+		        			精装湖景房
+		        			水韵花都
+						</pre>
+		        		<pre class="p3">
+		        			3室二厅 79.55平米
+						</pre>
+						<pre class="p4">
+		        			205万
+						</pre>
+		        	</li>
+		        	<li>
+		        		<img src="./images/210.jpg" alt="">
+		        		<pre class="p2">
+		        			工业园区 斜塘
+		        			金辉尊域雅苑
+						</pre>
+		        		<pre class="p3">
+		        			3室二厅 115.55平米
+						</pre>
+						<pre class="p4">
+		        			408万
+						</pre>
+		        	</li>
+		        	
+		        </ul>
+		    </div>
+		</div>
+
+
+		<div class="xiaoqu" >
+		    <div class="wrapper2">
+		        <div class="f2">
+		            <div class="name">
+		            	<b>小区</b>&nbsp;&nbsp;为你推荐
+		            </div>
+		            <p>纵览小区，恋上这座城<a href="/ershoufang/">更多苏州小区</a></p>
+		        </div>
+		        <div>
+		        	<ul class="xiaoqu2">
+			        	<li class="xiaoqu21">
+			        		<img src="./images/280x210.jpg" alt="">
+			        		<pre class="p2">
+		        			越湖家天下
+							</pre>
+			        		<pre class="p3">
+			        			48817元/平米
+							</pre>
+							<pre class="p4">
+			        			2011年建
+							</pre>
+			        	</li>
+
+			        	<li>
+			        		<img src="images/xiaoqu.jpg" alt="">
+			        		<pre class="p2">
+		        		     水韵花都
+							</pre>
+			        		<pre class="p3">
+			        			24817元/平米
+							</pre>
+							<pre class="p4">
+			        			2012年建
+							</pre>
+			        	</li>
+
+			        	<li>
+			        		<img src="images/232x174.jpg" alt="">
+			        		<pre class="p2">
+		        			活力岛 相城
+							</pre>
+			        		<pre class="p3">
+			        			24557元/平米
+							</pre>
+							<pre class="p4">
+			        			2014年建
+							</pre>
+			        	</li>
+		        	
+		        	</ul>
+		        </div>
+		       
+		    </div>
+		</div>
+
+		<div class="xinfang" >
+		    <div class="wrapper2">
+		        <div class="f2">
+		            <div class="name">
+		            	<b>新房</b>&nbsp;&nbsp;新启航
+		            </div>
+		            <p>真实信息准确同步，楼盘动态一手掌握<a href="/ershoufang/">更多苏州新房</a></p>
+		        </div>
+		        <ul class="xinfang2">
+		        	<li>
+		        		<span class="p11">
+		        			绿都苏和雅集
+		        		</span>
+		        		<span class="p22">
+		        			35000元/平
+		        		</span>
+		        	</li>
+		        	<li>
+		        		<span class="p11">
+		        			绿都苏和雅集
+		        		</span>
+		        		<span class="p22">
+		        			35000元/平
+		        		</span>
+		        	</li>
+		        	<li>
+		        		<span class="p11">
+		        			绿都苏和雅集
+		        		</span>
+		        		<span class="p22">
+		        			35000元/平
+		        		</span>
+		        	</li>
+		        </ul>
+		        
+		    </div>
+		</div>
+		<div class="s-truch">
+			<div class="fl"></div>
+			<div class="fr">
+				<pre style="font-size: 18px; margin-top: 0px ;line-height: 20px; color:white;" >
+	真实存在，真实在售，真实价格，真实图片！
+	链家郑重向用户承诺：真实房源，假一赔百元！
+				</pre>
+				<input type="text" placeholder="请输入链家编号查询真伪...">
+			</div>
+		</div>
+
+		<div class="last">
+			<div class="f-title clearfix">
+				<div class="zuo">
+					<ul class="menu1" style="color: white">
+						<li><a href="#">关于链家</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">隐私声明</a></li>
+						<li><a href="#">网站地图</a></li>
+						<li><a href="#">友情链接</a></li>
+						
+					</ul>
+				</div>
+				<div class="you">
+					官方客服 1010 9666
+				</div>
+			</div>
+			<div class="lianjia-link-box">
+				<div class="menu2">
+					<span class="span1" id="button1" onclick="button1click()">二手房</span>
+					<div class="spans1" id="div1" style="display: block">
+						<pre>
+合肥二手房 三亚二手房 济南二手房 凉山二手房 重庆二手房 开封二手房 常州二手房 大连二手房 廊坊二手房 
+北海二手房 淮安二手房 南昌二手房 吉林二手房 威海二手房 长沙二手房 泉州二手房 湖州二手房 宜昌二手房 
+石家庄二手房
+
+						</pre>
+					</div>
+					<span class="span2" id="button2" onclick="button2click()">热门小区</span>
+					<div class="spans2" id="div2">
+						<pre>
+锦荷苑 相门后庄80号 彩虹一村 锦江家园 虎阜花园西区 南环汇邻广场 绿地中央广场 四期夏莲花园 华敏世家花园
+招商公园1872 皓康小时代（新时代花园） 红鼎湾花园  新元新村 光华糖果公元 玖园中锐琅 石名筑半月 湾荷韵新村南区 
+海上印象淀辉锦园中泰大厦（昆山） 吴越尚院得易家龙湖狮山天街生活广场 一期荣华花苑 鑫鑫国际 阳光水世界五期
+君悦花园莲花新村七区绿地中央广场三期越溪庭院水岸清华保利雅苑葑谊新村舜江浅水湾道前街地方弄散盘淞泽家园（二区）
+葑门路散盘湖畔雅居希悦庭公馆
+
+						</pre>
+					</div>
+					<span class="span3" id="button3" onclick="button3click()">二手房</span>
+					<div class="spans1" id="div3">
+						<pre>
+济南二手房 凉山二手房 重庆二手房 开封二手房 常州二手房 大连二手房 廊坊二手房 
+北海二手房 淮安二手房 南昌二手房 吉林二手房 威海二手房 长沙二手房 泉州二手房 
+石家庄二手房
+
+						</pre>
+					</div>
+					<span class="span4" id="button4" onclick="button4click()">新房</span>
+					<div class="spans4" id="div4">
+						<pre>
+北京新房 长春新房 成都新房 重庆新房 长沙新房 大连新房 佛山新房 广州新房 合肥新房
+杭州新房 济南新房 昆明新房 南京新房 青岛新房 上海新房 石家庄新房 苏州新房 沈阳新房
+烟台新房 郑州新房
+
+						</pre>
+					</div>
+					<span class="span5" id="button5" onclick="button5click()">合作与友情链接</span>
+					<div class="spans5" id="div5">
+						<pre>
+杭州租房网  个人房源网  上海二手房
+
+
+						</pre>
+					</div>
+				</div>
+				
+				
+
+			</div>
+
+			<div class="bottom">
+				<div class="copyright">链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2019 链家网Lianjia.com版权所有 | <a target="_blank" href="#" style="text-decoration:none;color: #9E8888;">营业执照</a><br>违法和不良信息举报电话：010-86440676 违法和不良信息举报邮箱：jubaoyouxiang@lianjia.com
+				</div>
+				<div style="width:300px;color: #888c8e;font-size: 12px;line-height: 20px;float: left;">
+					<a target="_blank" href="#" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+						<img src="https://s1.ljcdn.com/feroot/pc/asset/img/home/beian.png?_v=20190618155701" "="" style="float:left;">
+						<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;color: #888c8e;">京公网安备 11010802024019号</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
